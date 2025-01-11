@@ -102,7 +102,6 @@ The datasets used can be downloaded. They include:
 
 ---
 
-## Explore More
 
 🔗 **GitHub Repository:**
 Dive into the codebase (file .ipynb).
