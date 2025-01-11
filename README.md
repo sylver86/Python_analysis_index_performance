@@ -105,7 +105,7 @@ The datasets used can be downloaded. They include:
 ## Explore More
 
 🔗 **GitHub Repository:**
-Dive into the codebase and explore how advanced Python techniques and data engineering practices are combined to produce actionable insights from financial data.
+Dive into the codebase (file .ipynb).
 
 ---
 
