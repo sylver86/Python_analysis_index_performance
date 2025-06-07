@@ -15,11 +15,6 @@ The analysis covers several key areas to understand the behavior of these indice
 -   **Weekday Effect**: Analysis of average returns for each day of the week.
 -   **Volatility Analysis**: Identification of the top 5 best and worst trading days to pinpoint periods of extreme market movement.
 
-### Sample Visualizations
-![image.png](attachment:a479e625-c5d2-4a52-be28-1c0bd4b2fd56.png)
-<br><br>
-![image.png](attachment:37895daf-e7c5-487c-ae8c-0b587dccada6.png)
-
 ## 3. Technologies Used
 -   Python 3
 -   Pandas
