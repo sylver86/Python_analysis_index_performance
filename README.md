@@ -1,114 +1,73 @@
-# Analysis of the Performance of S&P 500 and EURO STOXX 50 Indices
+# Stock Market Index Analysis: S&P 500 vs. EURO STOXX 50
 
-📊 **Project Objective:**
+## 1. Project Overview
 
-Welcome to the analysis of **S&P 500** and **EURO STOXX 50** indices. This project aims to provide actionable insights by analyzing 10 years of historical data, highlighting trends, and supporting strategic investment decisions.
+This project provides a comprehensive analysis of the historical performance of two major stock market indices over the last decade: the **S&P 500** (representing the US market) and the **EURO STOXX 50** (representing the European market).
 
-💼 **Project Description:**
+The primary goal is to extract actionable insights from historical data using Python's data science stack. This repository is structured as a professional data analysis project, emphasizing clean code, modularity, reproducibility, and clear visualization of results. The core logic is encapsulated in a Python module, while the analysis narrative and visualizations are presented in a Jupyter Notebook.
 
-This project is developed for **Global Investment Insights**, a financial consulting firm specializing in detailed analysis of stock market performance. The focus is on two fundamental indices:
+## 2. Key Analyses & Visualizations
 
-- **S&P 500**: Representing the U.S. stock market.
-- **EURO STOXX 50**: Representing the European stock market.
+The analysis covers several key areas to understand the behavior of these indices:
+-   **Historical Price and Volume Trends**: Visualization of closing prices and trading volumes over time to identify long-term trends.
+-   **Returns Distribution**: A histogram of daily returns to understand volatility and risk profile.
+-   **Periodic Performance**: Calculation of aggregated monthly and annual returns to assess performance over different time horizons.
+-   **Weekday Effect**: Analysis of average returns for each day of the week.
+-   **Volatility Analysis**: Identification of the top 5 best and worst trading days to pinpoint periods of extreme market movement.
 
-The objective is to study the performance of these indices over the last 10 years to derive valuable insights that can assist investors in making strategic decisions. By analyzing daily and monthly returns, identifying days of high volatility, and calculating average daily trading volumes, this project provides a comprehensive overview of the historical trends of two major global indices.
+### Sample Visualizations
+![image.png](attachment:a479e625-c5d2-4a52-be28-1c0bd4b2fd56.png)
+<br><br>
+![image.png](attachment:37895daf-e7c5-487c-ae8c-0b587dccada6.png)
 
-The analysis offers investors a clear and detailed view of:
-- Historical trends and performance.
-- Daily and monthly returns to guide investment strategies.
-- High-volatility days to help mitigate risks.
-- Average trading volumes to gauge investor interest and market activity.
+## 3. Technologies Used
+-   Python 3
+-   Pandas
+-   NumPy
+-   Matplotlib & Seaborn
+-   JupyterLab
 
----
+## 4. Project Structure
+The repository is organized following standard conventions for a data analysis project:
 
-## Key Features
+.
+├── data/               # Contains the raw CSV data files
+│   ├── sp500.csv
+│   └── euro50.csv
+├── notebooks/          # Contains the Jupyter Notebook for presentation
+│   └── main_analysis.ipynb
+├── src/                # Contains the modular Python source code
+│   └── analysis_tools.py
+├── .gitignore
+├── LICENSE
+├── README.md
+└── requirements.txt
 
-📈 **Percentage Returns:**
-  - Calculates monthly and annual percentage returns to evaluate performance over time.
+## 5. Setup and Usage
+To run this analysis on your local machine, please follow these steps:
 
-📅 **Weekday Analysis:**
-  - Determines average daily returns for each weekday, uncovering patterns or anomalies in market behavior.
+1.  **Clone the repository:**
+    ```bash
+    git clone <your-repository-url>
+    cd <repository-name>
+    ```
+2.  **Create and activate a virtual environment:**
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # On Windows: venv\Scripts\activate
+    ```
+3.  **Install the required dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+4.  **Run the analysis:**
+    Launch Jupyter Lab and open the `main_analysis.ipynb` notebook located in the `notebooks/` folder.
+    ```bash
+    jupyter lab
+    ```
 
-⚡ **Volatility Insights:**
-  - Identifies days with the highest and lowest daily returns, highlighting market volatility.
+## 6. Data Source
+The datasets for S&P 500 and EURO STOXX 50 were originally sourced from the "Complete-Financial-Data" collection and made available via Google Drive. For reproducibility, the raw CSV files are included in the `data/` directory of this repository.
 
-💰 **Volume Analysis:**
-  - Analyzes the average daily trading volume to gauge investor activity and interest in both indices.
-
----
-
-## Project Highlights
-
-🔍 **Data Engineering:**
-  - Processed and cleaned large datasets, ensuring data integrity and usability.
-
-📚 **Data Analysis:**
-  - Extracted meaningful metrics like percentage returns and average volumes.
-
-🧠 **Problem Solving:**
-  - Applied analytical methodologies to address business-relevant questions.
-
-⚙️ **Technologies Used:**
-  - **Python**, **Pandas**, **NumPy**
-
----
-
-## Dataset
-
-The datasets used can be downloaded. They include:
-
-- **Date**: Observation date.
-- **Open**: Opening price.
-- **High**: Daily high price.
-- **Low**: Daily low price.
-- **Close**: Closing price.
-- **Volume**: Number of trades executed during the day.
-
----
-
-## Methodology
-
-🔄 **Step-by-Step Process:**
-
-1. **Data Loading and Exploration:**
-   - Used **Pandas** to import datasets for both indices.
-   - Explored their structure, including checking for missing values and understanding the data distribution.
-
-2. **Data Cleaning:**
-   - Employed **Pandas** to handle missing values using forward filling.
-   - Ensured the dataset was ready for analysis by validating data types and removing inconsistencies.
-
-3. **Percentage Return Calculation:**
-   - Calculated daily, monthly, and annual percentage returns using **Pandas** and the formula:
-     ```
-     Return = ((Current Close - Previous Close) / Previous Close) * 100
-     ```
-
-4. **Weekday Return Analysis:**
-   - Grouped data by weekdays using **Pandas**' `groupby` method.
-   - Calculated average daily returns to identify patterns associated with specific days of the week.
-
-5. **Volatility Detection:**
-   - Identified the days with the highest and lowest daily returns using **Pandas** to sort and filter data.
-   - Highlighted periods of extreme volatility for each index.
-
-6. **Volume Analysis:**
-   - Used **Pandas** to compute average daily trading volumes.
-   - Analyzed investor interest and identified periods of high market activity.
-
-7. **Insights Generation:**
-   - Interpreted results using **Pandas** and statistical calculations.
-   - Provided actionable insights for strategic investment decisions by investors.
-
----
-
-
-🔗 **GitHub Repository:**
-Dive into the codebase (file .ipynb).
-
----
-
-**Author:**
-- Name: [Eugenio Pasqua]
-- Email: [eugenix86@gmail.com]
-- LinkedIn: [LinkedIn Profile]([https://www.linkedin.com](https://www.linkedin.com/in/genxdata58296/))
+## 7. License
+This project is licensed under the MIT License. See the `LICENSE` file for more details.
