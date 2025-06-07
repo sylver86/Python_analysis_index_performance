@@ -22,23 +22,8 @@ The analysis covers several key areas to understand the behavior of these indice
 -   Matplotlib & Seaborn
 -   JupyterLab
 
-## 4. Project Structure
-The repository is organized following standard conventions for a data analysis project:
 
-.
-├── data/               # Contains the raw CSV data files
-│   ├── sp500.csv
-│   └── euro50.csv
-├── notebooks/          # Contains the Jupyter Notebook for presentation
-│   └── main_analysis.ipynb
-├── src/                # Contains the modular Python source code
-│   └── analysis_tools.py
-├── .gitignore
-├── LICENSE
-├── README.md
-└── requirements.txt
-
-## 5. Setup and Usage
+## 4. Setup and Usage
 To run this analysis on your local machine, please follow these steps:
 
 1.  **Clone the repository:**
@@ -61,8 +46,8 @@ To run this analysis on your local machine, please follow these steps:
     jupyter lab
     ```
 
-## 6. Data Source
+## 5. Data Source
 The datasets for S&P 500 and EURO STOXX 50 were originally sourced from the "Complete-Financial-Data" collection and made available via Google Drive. For reproducibility, the raw CSV files are included in the `data/` directory of this repository.
 
-## 7. License
+## 6. License
 This project is licensed under the MIT License. See the `LICENSE` file for more details.
